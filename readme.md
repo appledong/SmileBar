@@ -1,4 +1,4 @@
-# SmileBar
+# SmileBar/CommonSmileBar(支持半星和保留一星功能，使用方法和下面几乎一样)
 
 Simple android library, that provide rating view with different drawables for each rating value
 
