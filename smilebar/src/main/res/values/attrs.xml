@@ -12,5 +12,10 @@
         <attr name="smileRate3" format="reference"/>
         <attr name="smileRate4" format="reference"/>
         <attr name="smileRate5" format="reference"/>
+        <!-- 针对普通view -->
+        <attr name="smileFull" format="reference"/>
+        <attr name="smileHalf" format="reference"/>
+        <attr name="isKeepOneSmile" format="boolean"/>
+        <attr name="commonrating" format="float"/>
     </declare-styleable>
 </resources>

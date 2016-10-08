@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.eugeneek.smilebar.CommonSmileBar;
 import com.eugeneek.smilebar.SmileBar;
 
 public class MainActivity extends AppCompatActivity implements SmileBar.OnRatingSliderChangeListener {
@@ -32,6 +33,22 @@ public class MainActivity extends AppCompatActivity implements SmileBar.OnRating
                     smileBar.setRating(smileBar.getRating() + 1);
                 s += " and after is " + smileBar.getRating();
                 Toast.makeText(getApplicationContext(), s, Toast.LENGTH_SHORT).show();
+            }
+        });
+        ((CommonSmileBar)findViewById(R.id.commonsmilebar)).setOnRatingSliderChangeListener(new CommonSmileBar.OnRatingSliderChangeListener() {
+            @Override
+            public void onPendingRating(float rating) {
+
+            }
+
+            @Override
+            public void onFinalRating(float rating) {
+                Log.e("dongdianzhou"," 最终的rating是：" + rating);
+            }
+
+            @Override
+            public void onCancelRating() {
+
             }
         });
     }
